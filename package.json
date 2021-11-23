@@ -1,0 +1,32 @@
+{
+  "name": "react-fe-scaffold",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate:types": "rm -f code-gen/graphql-schema.json && /bin/bash ./code-gen/generate-schema-json && graphql-codegen --config code-gen/codegen.yml",
+    "graphql:coverage": "graphql coverage",
+    "graphql:validate": "graphql validate"
+  },
+  "dependencies": {
+    "next": "12.0.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.3.0",
+    "@graphql-codegen/typescript": "^2.4.1",
+    "@graphql-codegen/typescript-operations": "^2.2.1",
+    "@types/node": "16.11.9",
+    "@types/react": "17.0.36",
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.4",
+    "typescript": "4.5.2",
+    "graphql-cli": "4.1.0",
+    "@graphql-cli/codegen": "2.1.5",
+    "@graphql-cli/coverage": "2.1.0",
+    "@graphql-cli/validate": "2.1.0"
+  }
+}

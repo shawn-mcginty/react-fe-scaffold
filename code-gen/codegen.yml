@@ -1,0 +1,8 @@
+overwrite: true
+schema: code-gen/graphql-schema.json
+documents: null
+generates:
+  ./lib/types/generated-graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
